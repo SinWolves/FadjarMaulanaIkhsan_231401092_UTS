@@ -2,7 +2,7 @@
 
 int main()
 {
-    double num[1000000];
+    double num;
     int i;
     float total=0.0, rata2;
     
@@ -13,14 +13,14 @@ int main()
     for (i=1;i>0;++i)
     {
         std::cout <<i<< ". Masukkan nilai ke-" << i<< ": ";
-        std::cin >> num[i];
+        std::cin >> num;
         
-        if (num[i]==-1)
+        if (num==-1)
         {
             goto x;
         }
         
-        else if (num[i]<-1)
+        else if (num<-1)
         {
             std::cout << "Angkanya harus positif" << std::endl;
             std::cout << "************************** " << std::endl;
@@ -28,7 +28,7 @@ int main()
             goto y;
         }
         
-        else if (num[i]!= static_cast<int>(num[i]))
+        else if (num!= static_cast<int>(num))
         {
             std::cout << "Angkanya harus bulat" << std::endl;
             std::cout << "************************** " << std::endl;
@@ -36,7 +36,7 @@ int main()
             goto y;
         }
         
-        total+=num[i];
+        total+=num;
     }
     
     x:
