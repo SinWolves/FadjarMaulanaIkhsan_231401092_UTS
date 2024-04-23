@@ -6,7 +6,7 @@ int main()
     std::cout<<"Masukkan angka dari 2-10: ";
     std::cin >> x;
     
-    if (x<2 || x > 10)
+    if (x<2 ^ x > 10)
     std::cout << "Inputan tidak memenuhi batas" << std::endl;
     
     else
